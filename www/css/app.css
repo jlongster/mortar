@@ -1,3 +1,5 @@
+@import url("poop.css");
+
 /*
  * HTML5 Boilerplate
  *
@@ -208,7 +210,7 @@ body {
     padding: 20px;
     padding-top: 1px;
     background-color: white;
-    width: 750px;
+    width: 800px;
     margin: 0 auto;
     border-radius: 0 0 10px 10px;
 }
@@ -221,11 +223,17 @@ section {
     width: 75%;
     margin: 0 auto;
     margin-top: 1.5em;
+    clear: both;
 }
 
 .intro {
     font-weight: bold;
     text-align: center;
+    margin-top: 1em;
+}
+
+.downloads {
+    overflow: hidden;
 }
 
 a, a:visited, a:active {
@@ -233,15 +241,27 @@ a, a:visited, a:active {
 }
 
 a.download {
-    background-color: #DDD7D7;
+    display: block;
     padding: .75em;
     border-radius: 10px;
-
-    display: block;
     width: 128px;
     margin: 0 auto;
     text-decoration: none;
     font-size: 1.1em;
+}
+
+.download-block {
+    /* border: #DDD7D7 solid 3px; */
+    float: left;
+    margin: 0 .5em;
+}
+
+.download-block a:hover {
+    background-color: #DDD7D7;
+}
+
+.download-block.volo pre {
+    margin-top: 4.0em;
 }
 
 .download div {
@@ -249,19 +269,14 @@ a.download {
     margin-top: 5px;
 }
 
+.volo-install {
+    background-color: grey;
+    border-radius: 8px;
+}
+
 pre {
     margin: 1em
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

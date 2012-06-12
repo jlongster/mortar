@@ -11,6 +11,9 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
+    <!-- If you intend to use volo's build command, do not add any
+         other CSS here and @import it in app.css. It will be inlined
+         when building. -->
     <link rel="stylesheet" href="css/app.css">
 
     <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -25,10 +28,20 @@
 
     <div class="content">
       <h1>Open Web App Bootstrap</h1>
-      <a href="https://github.com/jlongster/mortar/zipball/master" class="download">
-        <img src="img/cake.png" />
-        <div>Download</div>
-      </a>
+
+      <section class="downloads">
+        <div class="download-block">
+          <a href="https://github.com/jlongster/mortar/zipball/master" class="download">
+            <img src="img/cake.png" />
+            <div>Download</div>
+          </a>
+        </div>
+
+        <div class="download-block volo">
+          <pre><code>$ npm install -g volo
+$ volo create &lt;name&gt; mozilla/mortar</code></pre>
+        </div>
+      </section>
 
       <section class="intro">
         The Open Web App Bootstrap is a fork
